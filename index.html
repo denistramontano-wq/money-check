@@ -62,7 +62,7 @@ input,select{font:inherit;color:var(--tx)}
 .empty{padding:48px 24px;text-align:center;color:var(--mu)}
 .banner{display:flex;align-items:center;gap:16px;margin:16px;padding:16px;border-radius:16px;background:var(--sf);border:1px solid var(--amber)}
 .banner .grow{flex:1}
-.ver{padding:24px 16px;text-align:center;font-size:12px;color:var(--mu);user-select:none;-webkit-user-select:none}
+.ver{font-size:13px;color:var(--mu);user-select:none;-webkit-user-select:none}
 #fab{position:absolute;right:16px;bottom:calc(64px + var(--sb) + 16px);width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;z-index:5}
 #fab:active{opacity:.8}
 #nv{flex:none;display:grid;grid-template-columns:repeat(5,1fr);height:calc(64px + var(--sb));padding-bottom:var(--sb);border-top:1px solid var(--ln);background:var(--bg)}
@@ -164,7 +164,7 @@ pre{font:12px/1.5 ui-monospace,Menlo,monospace;white-space:pre-wrap;word-break:b
 
 <script>
 'use strict';
-const VER='2.0.0';
+const VER='2.1.0';
 const K={data:'spese.dati',log:'spese.log',dev:'spese.dev',pw:'spese.pw',err:'spese.err'};
 const ICON64='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';
 
@@ -288,6 +288,7 @@ const IC={
   pie:'<path d="M21.2 15.9A10 10 0 1 1 8 2.8"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>',
   cal:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
   file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h8"/>',
+  info:'<circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>',
   copy:'<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>'
 };
 const ic=(n,s=24)=>`<svg class="ic" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]||IC.tag}</svg>`;
@@ -434,7 +435,6 @@ function renderNav(){
     .map(([k,i,n])=>`<button class="${U.tab===k?'on':''}" data-act="tab" data-k="${k}">${ic(i)}<span>${n}</span></button>`).join('');
   const f=$('#fab');f.innerHTML=ic('plus',32);f.style.display=U.tab==='reg'?'flex':'none';
 }
-const verHtml=()=>`<div class="ver">v${VER} · Creato da Denis Tramontano</div>`;
 
 /* ---------- viste ---------- */
 function txRow(t){
@@ -576,6 +576,8 @@ function viewMore(){
   ${moreBtn('imp','ul','blue','Ripristina backup','Sostituisce i dati attuali')}
   ${moreBtn('csv','list','amber','Esporta movimenti','File CSV per Excel')}
   <div class="mu" style="padding:16px;font-size:13px">I dati restano solo su questo telefono, nel browser. Fai un backup ogni tanto: se cancelli i dati del sito, si perdono.${storageOk?'':'<br><span class="red">Il salvataggio locale non è disponibile in questa pagina.</span>'}</div>
+  <div class="grp">Info</div>
+  <div class="sline"><span class="dot" style="color:var(--blue)">${ic('info',20)}</span><div class="grow"><div>Spese</div><div class="ver">v${VER} · Creato da Denis Tramontano</div></div></div>
   <input type="file" id="file" accept=".json,application/json" style="display:none">
   <input type="file" id="ifile" accept=".csv,.txt,.tsv,.xlsx,.xls,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" style="display:none">`;
 }
@@ -626,7 +628,7 @@ function renderMn(keepScroll){
   else if(U.tab==='acc')h=viewAcc();
   else if(U.tab==='rate')h=viewRate();
   else h=viewMore();
-  mn.innerHTML=h+verHtml();
+  mn.innerHTML=h;
   if(keepScroll)mn.scrollTop=sc;
 }
 function render(keepScroll){renderHd();renderMn(keepScroll);renderNav();renderDevPill()}
