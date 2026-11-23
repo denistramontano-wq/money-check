@@ -164,8 +164,8 @@ pre{font:12px/1.5 ui-monospace,Menlo,monospace;white-space:pre-wrap;word-break:b
 
 <script>
 'use strict';
-const VER='3.0.0';
-const K={data:'spese.dati',log:'spese.log',dev:'spese.dev',pw:'spese.pw',err:'spese.err'};
+const VER='4.0.0';
+const K={data:'spese.dati',log:'spese.log',dev:'spese.dev',pw:'spese.pw',err:'spese.err',ms:'spese.onedrive'};
 const ICON64='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';
 
 /* ---------- utilità ---------- */
@@ -238,7 +238,7 @@ function load(){
   return seed();
 }
 let S=load();
-const save=()=>ls.set(K.data,JSON.stringify(S));
+const save=()=>{ls.set(K.data,JSON.stringify(S));gDirty()};
 
 /* ---------- log modifiche ---------- */
 function logC(a,item,before,after){
@@ -288,6 +288,7 @@ const IC={
   pie:'<path d="M21.2 15.9A10 10 0 1 1 8 2.8"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>',
   cal:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
   file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h8"/>',
+  cloud:'<path d="M17.5 19H9a7 7 0 1 1 6.7-9h1.8a4.5 4.5 0 1 1 0 9z"/>',
   upd:'<path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.8 1 6.5 2.5L21 8"/><path d="M21 3v5h-5"/>',
   info:'<circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>',
   copy:'<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>'
@@ -389,7 +390,7 @@ const U={tab:'reg',sub:'day',y:P0.y,m:P0.m,sel:today(),q:'',searching:false,st:'
 
 /* ---------- header / navigazione ---------- */
 const monthNav=(label,rg)=>`<div class="mnav"><button class="ib" data-act="prev" aria-label="Precedente">${ic('chl')}</button><button class="mlab" data-act="now">${label}${rg?`<span class="rg">${rg}</span>`:''}</button><button class="ib" data-act="next" aria-label="Successivo">${ic('chr')}</button></div>`;
-const PAGES={rec:'Ricorrenti',fav:'Preferiti',bud:'Budget'};
+const PAGES={rec:'Ricorrenti',fav:'Preferiti',bud:'Budget',gest:'Gestionale'};
 function summary(list,lab,prevList,pm){
   const t=totals(list),p=totals(prevList);
   return `<div class="sum">
@@ -473,7 +474,7 @@ function viewDay(){
     return r.length?groupByDay(r):`<div class="empty">Nessun risultato</div>`;
   }
   const l=monthTx(U.y,U.m);
-  return dueBanner()+(l.length?groupByDay(l):`<div class="empty">Nessun movimento in ${MESI[U.m]}.<br>Tocca + per aggiungerne uno.</div>`);
+  return gBanner()+dueBanner()+(l.length?groupByDay(l):`<div class="empty">Nessun movimento in ${MESI[U.m]}.<br>Tocca + per aggiungerne uno.</div>`);
 }
 function viewCal(){
   if(!U.sel.startsWith(mkey(U.y,U.m)))U.sel=today().startsWith(mkey(U.y,U.m))?today():mkey(U.y,U.m)+'-01';
@@ -564,6 +565,7 @@ function viewMore(){
   if(U.page==='rec')return viewRec();
   if(U.page==='fav')return viewFav();
   if(U.page==='bud')return viewBud();
+  if(U.page==='gest')return viewGest();
   const nb=Object.keys(S.budget).length,chr=ic('chr',20);
   return `<div class="grp">Movimenti</div>
   ${moreBtn('page" data-k="rec','cycle','green','Ricorrenti',S.rec.length?S.rec.length+' attive o concluse':'Spese ed entrate che si ripetono',chr)}
@@ -572,6 +574,7 @@ function viewMore(){
   ${moreBtn('cats','tag','violet','Categorie','',chr)}
   ${moreBtn('msday','cal','cyan','Inizio del mese','Il mese parte dal giorno '+MS(),chr)}
   <div class="grp">Dati</div>
+  ${moreBtn('page" data-k="gest','cloud','blue','Gestionale su OneDrive',gSub(),chr)}
   ${moreBtn('impfile','file','pink','Importa da file','CSV o Excel, anche da Money Manager')}
   ${moreBtn('exp','dl','green','Salva backup','File JSON con tutti i dati')}
   ${moreBtn('imp','ul','blue','Ripristina backup','Sostituisce i dati attuali')}
@@ -1294,6 +1297,224 @@ async function importFile(file){
   };
 }
 
+/* ---------- gestionale su OneDrive (Microsoft Graph) ---------- */
+/* L'app invia i propri movimenti nella sezione "spese" di gestionale.json.
+   Tocca solo i movimenti con src "app-spese"; tutto il resto del file resta com'è. */
+const G_SRC='app-spese',G_AUTH='https://login.microsoftonline.com/consumers/oauth2/v2.0/',G_API='https://graph.microsoft.com/v1.0';
+const G_SCOPE='Files.ReadWrite offline_access';
+const gCfg=()=>jget(K.ms,{});
+const gSet=o=>{const c=Object.assign(gCfg(),o);ls.set(K.ms,JSON.stringify(c));return c};
+const gOn=()=>{const c=gCfg();return !!(c.item&&c.started)};
+const gRedirect=()=>location.origin+location.pathname;
+const gHttps=()=>/^https:$/.test(location.protocol)||/^http:\/\/(localhost|127\.0\.0\.1)/.test(location.href);
+function gDirty(){
+  try{if(!gOn())return;gSet({dirty:true});clearTimeout(window.__gT);window.__gT=setTimeout(()=>gSync(),2500)}catch(e){}
+}
+function gSub(){
+  const c=gCfg();
+  if(!gOn())return 'Invia le spese a gestionale.json';
+  if(c.needLogin)return '<span class="red">Accedi di nuovo per inviare le modifiche</span>';
+  if(c.err)return '<span class="red">Ultimo invio non riuscito</span>';
+  return c.dirty?'Modifiche in attesa di invio':'Aggiornato'+(c.last?' · '+gWhen(c.last):'');
+}
+const gWhen=t=>{const d=new Date(t);return (ymd(d)===today()?'oggi':d.getDate()+' '+M3[d.getMonth()])+' '+pad(d.getHours())+':'+pad(d.getMinutes())};
+function gBanner(){
+  const c=gCfg();if(!gOn()||!(c.needLogin&&c.dirty))return '';
+  return `<div class="banner"><div class="grow"><div class="w6">Gestionale non aggiornato</div><div class="mu" style="font-size:13px">L'accesso a Microsoft è scaduto: le modifiche sono in attesa</div></div><button class="btn sm" style="width:auto" data-act="glogin">Accedi</button></div>`;
+}
+/* login OAuth con PKCE (app di tipo "applicazione a pagina singola") */
+const b64u=buf=>btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const rnd=n=>b64u(crypto.getRandomValues(new Uint8Array(n)));
+async function gLogin(){
+  const c=gCfg();
+  if(!c.cid)return toast('Inserisci prima l\'ID applicazione');
+  if(!gHttps())return toast('Serve l\'app aperta da un indirizzo https');
+  const ver=rnd(48),st=rnd(16);
+  const ch=b64u(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(ver)));
+  gSet({pk:{ver,st,t:Date.now()}});
+  const q=new URLSearchParams({client_id:c.cid,response_type:'code',redirect_uri:gRedirect(),scope:G_SCOPE,code_challenge:ch,code_challenge_method:'S256',state:st,response_mode:'query'});
+  location.href=G_AUTH+'authorize?'+q;
+}
+async function gToken(body){
+  const c=gCfg();
+  const r=await fetch(G_AUTH+'token',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(Object.assign({client_id:c.cid,scope:G_SCOPE},body))});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok||!j.access_token){const e=new Error(j.error_description||j.error||('token '+r.status));e.auth=true;throw e}
+  gSet({tok:{at:j.access_token,exp:Date.now()+(j.expires_in||3600)*1000,rt:j.refresh_token||gCfg().tok?.rt},needLogin:false});
+  return j.access_token;
+}
+async function gRedirectBack(){
+  const q=new URLSearchParams(location.search);
+  if(!q.has('code')&&!q.has('error'))return false;
+  const c=gCfg();history.replaceState(null,'',gRedirect()+location.hash);
+  if(!c.pk||q.get('state')!==c.pk.st)return false;
+  U.tab='more';U.page='gest';render();
+  if(q.has('error')){gSet({pk:null});toast('Accesso annullato');return true}
+  try{await gToken({grant_type:'authorization_code',code:q.get('code'),redirect_uri:gRedirect(),code_verifier:c.pk.ver});gSet({pk:null});toast('Collegato a Microsoft');if(gOn())gSync()}
+  catch(e){console.warn('login',e.message);toast('Accesso non riuscito')}
+  render(true);return true;
+}
+async function gAT(){
+  const t=gCfg().tok;
+  if(t&&t.at&&t.exp>Date.now()+60000)return t.at;
+  if(t&&t.rt)return gToken({grant_type:'refresh_token',refresh_token:t.rt});
+  const e=new Error('login');e.auth=true;throw e;
+}
+async function gApi(path,opt={}){
+  const at=await gAT();
+  const r=await fetch(G_API+path,Object.assign({},opt,{headers:Object.assign({Authorization:'Bearer '+at},opt.headers||{})}));
+  if(r.status===401){gSet({tok:Object.assign(gCfg().tok||{},{at:null})});const e=new Error('401');e.auth=true;throw e}
+  return r;
+}
+/* confronto: chiave per riconoscere un movimento uguale già presente */
+const gKey=(d,t,imp,conto)=>[d,t,Math.round(imp*100),conto].join('|');
+const GT={out:'u',in:'e',tr:'t'};
+/* costruisce il nuovo contenuto del file; c = configurazione (copia di lavoro) */
+function gReconcile(G,c,firstAll){
+  const sp=G.spese=G.spese||{};
+  ['conti','cat','mov'].forEach(k=>{if(!Array.isArray(sp[k]))sp[k]=[]});
+  c.am=c.am||{};c.cm=c.cm||{};c.skip=c.skip||{};
+  const st={add:0,upd:0,del:0,skip:0,conti:[],cat:[]};
+  const conto=id=>{
+    if(c.am[id]&&sp.conti.some(x=>x.id===c.am[id]))return c.am[id];
+    const a=acc(id),name=a?a.name:'Conto eliminato',k=nrm(name);
+    let f=sp.conti.find(x=>nrm(x.n)===k||(Array.isArray(x.alias)&&x.alias.some(y=>nrm(y)===k)));
+    if(!f){f={id:'sp_'+id,n:name,val:'EUR',s0:0};sp.conti.push(f);st.conti.push(name)}
+    return c.am[id]=f.id;
+  };
+  const cat=(id,t)=>{
+    const key=t+':'+id;
+    if(c.cm[key]&&sp.cat.some(x=>x.id===c.cm[key]))return c.cm[key];
+    const ct=catOf(id),k=nrm(ct.name);
+    let f=sp.cat.find(x=>x.t===t&&nrm(x.n)===k);
+    if(!f){f={id:'sp_'+id,n:ct.name,t,col:ct.color};sp.cat.push(f);st.cat.push(ct.name)}
+    return c.cm[key]=f.id;
+  };
+  const mine=new Map();sp.mov.forEach((m,i)=>{if(m&&m.src===G_SRC)mine.set(m.id,i)});
+  /* primo invio di "tutti": salta quelli che il gestionale ha già */
+  if(firstAll){
+    const have=new Map();sp.mov.forEach(m=>{if(m&&m.src!==G_SRC){const k=gKey(m.d,m.t,m.imp,m.conto);have.set(k,(have.get(k)||0)+1)}});
+    S.tx.forEach(t=>{
+      if(mine.has('sp_'+t.id))return;
+      const k=gKey(t.d,GT[t.t],t.a/100,conto(t.acc)),n=have.get(k)||0;
+      if(n>0){have.set(k,n-1);c.skip[t.id]=1}
+    });
+  }
+  const want=new Set();
+  S.tx.forEach(t=>{
+    const id='sp_'+t.id;
+    if(c.skip[t.id]){st.skip++;return}
+    if(!mine.has(id)&&(t.ts||0)<(c.from||0))return;
+    want.add(id);
+    const m={id,d:t.d,t:GT[t.t],imp:t.a/100,conto:conto(t.acc)};
+    if(t.t==='tr')m.conto2=conto(t.acc2);
+    m.cat=t.t==='tr'?'':cat(t.c,GT[t.t]);m.note=t.note||'';m.src=G_SRC;
+    if(mine.has(id)){const i=mine.get(id);if(JSON.stringify(sp.mov[i])!==JSON.stringify(m)){sp.mov[i]=m;st.upd++}}
+    else{sp.mov.push(m);st.add++}
+  });
+  /* eliminati nell'app: via anche dal gestionale */
+  const ids=new Set(S.tx.map(t=>'sp_'+t.id));
+  const before=sp.mov.length;
+  sp.mov=sp.mov.filter(m=>!(m&&m.src===G_SRC&&!ids.has(m.id)));
+  st.del=before-sp.mov.length;
+  st.changed=!!(st.add||st.upd||st.del||st.conti.length||st.cat.length);
+  if(st.changed){const n=Date.now();sp._ts=n;G._ts=n}
+  return st;
+}
+async function gLoad(){
+  const c=gCfg();
+  const r=await gApi('/me/drive/items/'+encodeURIComponent(c.item.id));
+  if(!r.ok)throw new Error('file '+r.status);
+  const meta=await r.json(),url=meta['@microsoft.graph.downloadUrl'];
+  if(!url)throw new Error('download');
+  const txt=await (await fetch(url,{cache:'no-store'})).text();
+  let G;try{G=JSON.parse(txt.replace(/^﻿/,''))}catch(e){throw new Error('Il file non è un JSON valido')}
+  if(!G||typeof G!=='object'||Array.isArray(G))throw new Error('Il file non è un gestionale valido');
+  return {G,etag:meta.eTag};
+}
+let gBusy=false;
+async function gSync(opts={}){
+  if(gBusy||!gCfg().item)return null;
+  if(!opts.first&&!gOn())return null;
+  if(!navigator.onLine){gSet({dirty:true});return null}
+  gBusy=true;let res=null;
+  try{
+    for(let k=0;k<3;k++){
+      const {G,etag}=await gLoad();
+      const c=clone(gCfg()),st=gReconcile(G,c,opts.firstAll);
+      if(st.changed){
+        const r=await gApi('/me/drive/items/'+encodeURIComponent(c.item.id)+'/content',{method:'PUT',headers:{'Content-Type':'application/json','If-Match':etag},body:JSON.stringify(G)});
+        if(r.status===412||r.status===409)continue;
+        if(!r.ok)throw new Error('salvataggio '+r.status);
+        logC('sincronizzazione','gestionale.json su OneDrive',null,{aggiunti:st.add,aggiornati:st.upd,eliminati:st.del,gia_presenti:st.skip,conti_nuovi:st.conti,categorie_nuove:st.cat});
+      }
+      gSet({am:c.am,cm:c.cm,skip:c.skip,dirty:false,err:null,last:Date.now(),started:true,needLogin:false});
+      res=st;break;
+    }
+    if(!res)throw new Error('Il file cambia di continuo, riprova');
+  }catch(e){
+    console.warn('gestionale',e.message);
+    gSet(e.auth?{needLogin:true,dirty:true}:{err:e.message,dirty:true});
+  }finally{gBusy=false}
+  if(U.tab==='more'||U.tab==='reg')render(true);
+  return res;
+}
+async function gFind(){
+  const r=await gApi("/me/drive/root/search(q='gestionale.json')?$select=id,name,parentReference,size,lastModifiedDateTime&$top=20");
+  if(!r.ok)throw new Error('ricerca '+r.status);
+  return ((await r.json()).value||[]).filter(f=>/\.json$/i.test(f.name)&&!f.folder);
+}
+function viewGest(){
+  const c=gCfg(),tok=c.tok&&c.tok.rt;
+  if(!gHttps())return `<div class="card"><div class="w6" style="margin-bottom:8px">Serve l'app online</div><div class="mu" style="font-size:13px">Il collegamento con OneDrive funziona solo con l'app aperta dal suo indirizzo https (non da un file sul telefono o sul PC).</div></div>`;
+  let h='';
+  if(gOn()){
+    h+=`<div class="card"><div class="mu" style="font-size:13px">Collegato a</div><div class="w6">${esc(c.item.name)}</div><div class="mu" style="font-size:13px">${esc(c.item.path||'')}</div>
+      <div class="kv" style="margin-top:8px"><span class="mu">Stato</span><span>${gSub()}</span></div>
+      <div class="kv"><span class="mu">Invia</span><span>${c.from?'movimenti dal '+gWhen(c.from):'tutti i movimenti'}</span></div>
+      ${c.err?`<div class="kv"><span class="mu">Errore</span><span class="red">${esc(c.err)}</span></div>`:''}</div>
+      <div style="padding:0 16px"><div class="acts">${c.needLogin||!tok?'<button class="btn" data-act="glogin">Accedi di nuovo a Microsoft</button>':'<button class="btn" data-act="gsync">Invia ora</button>'}<button class="btn ghost" data-act="goff">Scollega</button></div>
+      <div class="hint" style="margin-top:16px">Ogni movimento aggiunto, modificato o eliminato qui viene riportato nella sezione Spese del gestionale. Le spese inviate dall'app si modificano da qui: se le cambi nel gestionale, al prossimo invio tornano come nell'app. Il resto del file non viene toccato.</div></div>`;
+    return h;
+  }
+  /* passo 1: ID applicazione e accesso */
+  h+=`<div class="grp">1 · Accesso a Microsoft</div><div style="padding:0 16px">
+    <div class="fld"><label for="gcid">ID applicazione (client)</label><input id="gcid" value="${esc(c.cid||'')}" placeholder="00000000-0000-0000-0000-000000000000" autocomplete="off"></div>
+    <div class="hint">URI di reindirizzamento da registrare (tipo "Applicazione a pagina singola"):<br><span style="color:var(--tx);word-break:break-all">${esc(gRedirect())}</span></div>
+    <div class="acts">${tok?'<div class="hint" style="margin:0"><span class="green">Accesso fatto.</span></div>':''}<button class="btn ${tok?'sec':''}" data-act="glogin">${tok?'Accedi con un altro account':'Accedi con Microsoft'}</button></div></div>`;
+  if(!tok)return h;
+  /* passo 2: scelta del file */
+  h+=`<div class="grp">2 · File del gestionale</div><div style="padding:0 16px">`;
+  if(c.item)h+=`<div class="sline" style="padding:16px 0"><span class="dot" style="color:var(--green)">${ic('file',20)}</span><div class="grow"><div>${esc(c.item.name)}</div><div class="mu" style="font-size:13px">${esc(c.item.path||'')}</div></div></div>`;
+  h+=`<div id="gfiles"></div><div class="acts"><button class="btn ${c.item?'sec':''}" data-act="gfind">${c.item?'Cambia file':'Cerca gestionale.json'}</button></div></div>`;
+  if(!c.item)return h;
+  /* passo 3: avvio */
+  h+=`<div class="grp">3 · Cosa inviare</div><div style="padding:0 16px">
+    <div class="seg" id="gmode" style="padding:0 0 16px"><button type="button" class="in on" data-m="new">Solo i nuovi</button><button type="button" class="in" data-m="all">Tutti</button></div>
+    <div class="hint" id="gmh">Da adesso in poi: i movimenti già nell'app restano fuori.</div>
+    <div class="acts"><button class="btn" data-act="gstart">Avvia il collegamento</button></div></div>`;
+  return h;
+}
+async function gStart(){
+  const all=!!document.querySelector('#gmode [data-m=all].on');
+  const prev=gCfg();
+  gSet({from:all?0:Date.now(),skip:{},started:false});
+  toast('Controllo il file');
+  /* anteprima senza salvare */
+  let pv;
+  try{const {G}=await gLoad();const c=clone(gCfg());pv=gReconcile(G,c,all)}
+  catch(e){gSet({from:prev.from});return toast(e.auth?'Accedi di nuovo a Microsoft':'Non riesco a leggere il file: '+e.message)}
+  const msg=`Verranno inviati <b>${pv.add}</b> movimenti al gestionale${pv.skip?`, ${pv.skip} già presenti saltati`:''}.`+
+    (pv.conti.length?`<br>Conti nuovi nel gestionale: ${pv.conti.map(esc).join(', ')}.`:'')+
+    (pv.cat.length?`<br>Categorie nuove nel gestionale: ${pv.cat.map(esc).join(', ')}.`:'')+
+    `<br><br>Da ora ogni modifica verrà inviata in automatico.`;
+  if(!await confirmBox(msg,'Collega'))return;
+  const r=await gSync({first:true,firstAll:all});
+  if(r){logC('modifica','collegamento gestionale OneDrive',null,{file:gCfg().item.path,da:all?'tutti':'nuovi'});toast('Collegato: '+r.add+' movimenti inviati')}
+  else toast('Invio non riuscito: '+(gCfg().err||'accesso scaduto'));
+  render(true);
+}
+
 /* ---------- aggiornamento app ---------- */
 const cmpVer=(a,b)=>{const x=a.split('.').map(Number),y=b.split('.').map(Number);for(let i=0;i<3;i++){if((x[i]||0)!==(y[i]||0))return (x[i]||0)-(y[i]||0)}return 0};
 let updBusy=false;
@@ -1384,6 +1605,17 @@ const A={
   addfav(){favSheet()},editfav(el){favSheet(el.dataset.id)},
   setbud(el){budSheet(el.dataset.id)},msday(){msSheet()},
   checkupd(){checkUpdate()},
+  glogin(){const v=$('#gcid');if(v){const id=v.value.trim();if(!/^[0-9a-f-]{36}$/i.test(id))return toast('ID applicazione non valido');gSet({cid:id})}gLogin()},
+  async gfind(){
+    const box=$('#gfiles');box.innerHTML='<div class="hint">Cerco…</div>';
+    let l;try{l=await gFind()}catch(e){box.innerHTML='';return toast(e.auth?'Accedi di nuovo a Microsoft':'Ricerca non riuscita')}
+    if(!l.length){box.innerHTML='<div class="hint">Nessun gestionale.json trovato su OneDrive.</div>';return}
+    box.innerHTML=l.map(f=>{const p=((f.parentReference&&f.parentReference.path)||'').replace(/^\/drive\/root:?/,'')||'/';return `<button class="list-btn" style="padding:16px 0" data-act="gpick" data-id="${esc(f.id)}" data-n="${esc(f.name)}" data-p="${esc(p+'/'+f.name)}"><span class="dot" style="color:var(--blue)">${ic('file',20)}</span><span class="grow"><div>${esc(f.name)}</div><div class="mu" style="font-size:13px">${esc(p)} · ${Math.round((f.size||0)/1024)} KB</div></span></button>`}).join('');
+  },
+  gpick(el){gSet({item:{id:el.dataset.id,name:el.dataset.n,path:el.dataset.p},started:false});render(true)},
+  gstart(){gStart()},
+  async gsync(){toast('Invio in corso');const r=await gSync();if(r)toast(r.changed?'Gestionale aggiornato':'Già aggiornato');else toast('Invio non riuscito')},
+  async goff(){if(!await confirmBox('Scollegare il gestionale? Le spese già inviate restano nel file.','Scollega'))return;const c=gCfg();ls.set(K.ms,JSON.stringify({cid:c.cid}));logC('modifica','collegamento gestionale OneDrive',{file:c.item&&c.item.path},null);render(true)},
   impfile(){const f=$('#ifile');f.value='';f.click()},
   cats(){catsSheet()},addcat(){catSheet()},editcat(el){catSheet(el.dataset.id)},
   exp(){exportJson()},csv(){exportCsv()},imp(){const f=$('#file');f.value='';f.click()},
@@ -1396,6 +1628,7 @@ const A={
   async devwipe(){
     if(!await confirmBox('Cancellare tutti i dati locali e la cache? I movimenti andranno persi.','Cancella'))return;
     const b={movimenti:S.tx.length,conti:S.accounts.length,rate:S.rates.length};
+    ls.del(K.ms);/* scollega prima il gestionale: non deve cancellare le spese già inviate */
     S=seed();save();logC('reset','dati locali',b,{movimenti:0,conti:S.accounts.length,rate:0});
     try{const ks=await caches.keys();await Promise.all(ks.map(k=>caches.delete(k)))}catch(e){}
     try{const rs=await navigator.serviceWorker.getRegistrations();await Promise.all(rs.map(r=>r.unregister()))}catch(e){}
@@ -1408,16 +1641,23 @@ document.addEventListener('click',e=>{
   if(!el)return;
   const f=A[el.dataset.act];if(f)f(el,e);
 });
+document.addEventListener('click',e=>{
+  const b=e.target.closest('#gmode button');if(!b)return;
+  document.querySelectorAll('#gmode button').forEach(x=>x.classList.toggle('on',x===b));
+  $('#gmh').textContent=b.dataset.m==='all'?'Anche i movimenti già nell\'app: quelli che il gestionale ha già (stessa data, tipo, importo e conto) vengono saltati.':'Da adesso in poi: i movimenti già nell\'app restano fuori.';
+});
+window.addEventListener('online',()=>{if(gOn()&&gCfg().dirty)gSync()});
 document.addEventListener('input',e=>{if(e.target.id==='q'){U.q=e.target.value;renderMn()}});
 document.addEventListener('change',e=>{
   if(e.target.id==='file'&&e.target.files[0])importJson(e.target.files[0]);
   if(e.target.id==='ifile'&&e.target.files[0])importFile(e.target.files[0]);
 });
 /* se l'app resta aperta, al ritorno registra le ricorrenti arrivate a scadenza */
-document.addEventListener('visibilitychange',()=>{if(document.hidden)return;const n=runRec();if(n){render(true);toast(n===1?'1 movimento ricorrente registrato':n+' movimenti ricorrenti registrati')}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)return;if(gOn()&&gCfg().dirty)gSync();const n=runRec();if(n){render(true);toast(n===1?'1 movimento ricorrente registrato':n+' movimenti ricorrenti registrati')}});
 
 /* ---------- avvio ---------- */
 render();
+gRedirectBack().then(h=>{if(!h&&gOn()&&gCfg().dirty)gSync()}).catch(()=>{});
 if(RECRUN)setTimeout(()=>toast(RECRUN===1?'1 movimento ricorrente registrato':RECRUN+' movimenti ricorrenti registrati'),400);
 (function pwa(){
   try{
