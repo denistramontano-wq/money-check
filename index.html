@@ -164,8 +164,8 @@ pre{font:12px/1.5 ui-monospace,Menlo,monospace;white-space:pre-wrap;word-break:b
 
 <script>
 'use strict';
-const VER='5.0.0';
-const K={data:'spese.dati',log:'spese.log',dev:'spese.dev',pw:'spese.pw',err:'spese.err',gest:'spese.gestionale'};
+const VER='6.0.0';
+const K={data:'spese.dati',log:'spese.log',dev:'spese.dev',pw:'spese.pw',err:'spese.err',gest:'spese.gestionale',gread:'spese.gestionale.lettura'};
 const ICON64='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';
 
 /* ---------- utilità ---------- */
@@ -574,7 +574,7 @@ function viewMore(){
   ${moreBtn('cats','tag','violet','Categorie','',chr)}
   ${moreBtn('msday','cal','cyan','Inizio del mese','Il mese parte dal giorno '+MS(),chr)}
   <div class="grp">Dati</div>
-  ${moreBtn('page" data-k="gest','cloud','blue','Invia al gestionale',gSub(),chr)}
+  ${moreBtn('page" data-k="gest','cloud','blue','Gestionale',gSub(),chr)}
   ${moreBtn('impfile','file','pink','Importa da file','CSV o Excel, anche da Money Manager')}
   ${moreBtn('exp','dl','green','Salva backup','File JSON con tutti i dati')}
   ${moreBtn('imp','ul','blue','Ripristina backup','Sostituisce i dati attuali')}
@@ -683,8 +683,9 @@ function txSheet(id,date,pre){
     <div class="fld" id="fcw"><label>Categoria</label><div class="cats" id="fc"></div></div>
     <div class="fld"><label for="fn">Nota</label><input id="fn" placeholder="Es. Carrefour" autocomplete="off" value="${esc(src?src.note:'')}"></div>
     ${ed&&ed.rcid?'<div class="hint">Creato da una spesa ricorrente: le modifiche valgono solo per questo movimento.</div>':''}
-    ${ed?`<div class="acts two"><button class="btn del" id="fx">Elimina</button><button class="btn ghost" id="fdup">${ic('copy',20)}Duplica</button></div>`:''}
-    <div class="acts"><button class="btn" id="fs">Salva</button></div>`);
+    ${ed&&ed.gid?`<div class="hint">Arriva dal gestionale: si modifica o si elimina sul PC. Qui puoi solo duplicarlo.</div><div class="acts"><button class="btn ghost" id="fdup">${ic('copy',20)}Duplica</button></div>`
+    :`${ed?`<div class="acts two"><button class="btn del" id="fx">Elimina</button><button class="btn ghost" id="fdup">${ic('copy',20)}Duplica</button></div>`:''}
+    <div class="acts"><button class="btn" id="fs">Salva</button></div>`}`);
   draw();
   if(favs)$('#fv').onclick=e=>{
     const b=e.target.closest('[data-f]');if(!b)return;
@@ -703,11 +704,12 @@ function txSheet(id,date,pre){
     if(type==='tr'){f.acc2=$('#fa2').value;f.name=note||'Trasferimento'}else{f.c=cat;f.name=note||catOf(cat).name}
     S.fav.push(f);save();logC('aggiunta','preferito',null,f);toast('Aggiunto ai preferiti');
   };
-  if(ed)$('#fdup').onclick=()=>{const c=clone(ed);delete c.id;delete c.rid;delete c.ri;delete c.rcid;txSheet(null,today(),c)};
+  if(ed)$('#fdup').onclick=()=>{const c=clone(ed);delete c.id;delete c.rid;delete c.ri;delete c.rcid;delete c.gid;txSheet(null,today(),c)};
   $('#sg').onclick=e=>{const b=e.target.closest('button');if(!b)return;type=b.dataset.t;draw()};
   $('#fc').onclick=e=>{const b=e.target.closest('button');if(!b)return;cat=b.dataset.c;draw()};
   $('#fa1').onchange=()=>draw();
-  $('#fs').onclick=()=>{
+  if(ed&&ed.gid)document.querySelectorAll('#sh input,#sh select,#sg button,#fc button').forEach(x=>x.disabled=true);
+  if(!(ed&&ed.gid))$('#fs').onclick=()=>{
     const a=toCents($('#fm').value);
     if(!(a>0))return toast('Importo non valido');
     if(!$('#fd').value)return toast('Serve una data');
@@ -725,7 +727,7 @@ function txSheet(id,date,pre){
     else if(U.tab==='reg'&&U.sub==='day'){const pp=periodOf(t.d);U.y=pp.y;U.m=pp.m}
     render(true);toast('Salvato');
   };
-  if(ed)$('#fx').onclick=async()=>{
+  if(ed&&!ed.gid)$('#fx').onclick=async()=>{
     if(!await confirmBox('Eliminare questo movimento?','Elimina'))return;
     delTx(ed.id);closeSheet();render(true);toast('Eliminato');
   };
@@ -1306,7 +1308,7 @@ const gSet=o=>{const c=Object.assign(gCfg(),o);ls.set(K.gest,JSON.stringify(c));
 const gOn=()=>!!gCfg().from;
 function gMov(){
   const from=gCfg().from||'9999';
-  return S.tx.filter(t=>t.d>=from).sort((a,b)=>a.d<b.d?-1:a.d>b.d?1:(a.ts||0)-(b.ts||0)).map(t=>{
+  return S.tx.filter(t=>t.d>=from&&!t.gid).sort((a,b)=>a.d<b.d?-1:a.d>b.d?1:(a.ts||0)-(b.ts||0)).map(t=>{
     const m={id:'sp_'+t.id,d:t.d,t:GT[t.t],imp:t.a/100,conto:accName(t.acc)};
     if(t.t==='tr')m.conto2=accName(t.acc2);
     m.cat=t.t==='tr'?'':catOf(t.c).name;m.note=t.note||'';
@@ -1317,9 +1319,10 @@ const gHash=()=>hash(JSON.stringify(gMov())+'|'+gCfg().from);
 const gPending=()=>gOn()&&gHash()!==gCfg().hash;
 const gWhen=t=>{const d=new Date(t);return (ymd(d)===today()?'oggi':d.getDate()+' '+M3[d.getMonth()])+' alle '+pad(d.getHours())+':'+pad(d.getMinutes())};
 function gSub(){
-  if(!gOn())return 'Prepara il file per il gestionale su OneDrive';
+  const r=jget(K.gread,{}),rd=r.when?'letto '+gWhen(r.when):'';
+  if(!gOn())return rd?'Spese lette dal gestionale · '+rd:'Ricevi e invia le spese del gestionale su OneDrive';
   const c=gCfg();
-  return gPending()?'<span class="amber" style="color:var(--amber)">Modifiche da inviare</span>':'Inviato '+gWhen(c.last);
+  return (gPending()?'<span style="color:var(--amber)">Modifiche da inviare</span>':'Inviato '+gWhen(c.last))+(rd?' · '+rd:'');
 }
 function gBanner(){
   const c=gCfg();
@@ -1339,17 +1342,95 @@ async function gSend(){
   }
   download(name,txt,'application/json');done();toast('File scaricato: spostalo nella cartella Gestionale');
 }
+/* lettura di gestionale.json: le spese inserite sul PC arrivano sul telefono (in sola lettura) */
+const GTI={u:'out',e:'in',t:'tr'};
+function gReadPlan(G){
+  const sp=G.spese,r=jget(K.gread,{}),skip=Object.assign({},r.skip||{});
+  const P={add:[],upd:[],del:[],dup:0,bad:0,newAcc:new Map(),newCat:new Map(),skip,ts:+G._ts||0};
+  const cg=new Map((sp.conti||[]).map(c=>[c.id,c])),kg=new Map((sp.cat||[]).map(c=>[c.id,c]));
+  const accRef=gidC=>{
+    const c=cg.get(gidC);if(!c)return null;
+    const names=[c.n].concat(Array.isArray(c.alias)?c.alias:[]).map(nrm);
+    const a=S.accounts.find(x=>names.includes(nrm(x.name)));if(a)return a.id;
+    const k='new:'+nrm(c.n);if(!P.newAcc.has(k))P.newAcc.set(k,{name:clean(c.n)||c.n,init:Math.round((+c.s0||0)*100)});return k;
+  };
+  const catRef=(gidK,type)=>{
+    const c=kg.get(gidK),name=c?clean(c.n)||c.n:'Altro',k=nrm(name);
+    const f=S.cats.find(x=>x.type===type&&nrm(x.name)===k);if(f)return f.id;
+    const key='new:'+type+':'+k;if(!P.newCat.has(key))P.newCat.set(key,{name,type,color:c&&/^#[0-9a-f]{6}$/i.test(c.col)?c.col:COL_PICK[P.newCat.size%COL_PICK.length]});return key;
+  };
+  const mine=new Map();S.tx.forEach(t=>{if(t.gid)mine.set(t.gid,t)});
+  const kk=(d,t,a,acc)=>[d,t,a,acc].join('|');
+  const have=new Map();S.tx.forEach(t=>{if(!t.gid){const k=kk(t.d,t.t,t.a,t.acc);have.set(k,(have.get(k)||0)+1)}});
+  const seen=new Set();
+  (sp.mov||[]).forEach(m=>{
+    if(!m||m.src==='app-spese')return;
+    const t=GTI[m.t],a=Math.round((+m.imp||0)*100);
+    if(!t||!(a>0)||!/^\d{4}-\d{2}-\d{2}$/.test(m.d||'')){P.bad++;return}
+    const acc=accRef(m.conto),acc2=t==='tr'?accRef(m.conto2):null;
+    if(!acc||(t==='tr'&&(!acc2||acc2===acc))){P.bad++;return}
+    seen.add(m.id);
+    if(skip[m.id]){P.dup++;return}
+    const x={gid:m.id,d:m.d,t,a,acc,note:String(m.note||'')};
+    if(t==='tr')x.acc2=acc2;else x.c=catRef(m.cat,t);
+    const ex=mine.get(m.id);
+    if(ex){if(['d','t','a','acc','acc2','c','note'].some(k=>(ex[k]||'')!==(x[k]||'')))P.upd.push([ex,x]);return}
+    const k=kk(x.d,x.t,x.a,x.acc),q=have.get(k)||0;
+    if(q>0&&!String(x.acc).startsWith('new:')){have.set(k,q-1);skip[m.id]=1;P.dup++;return}
+    P.add.push(x);
+  });
+  S.tx.forEach(t=>{if(t.gid&&!seen.has(t.gid))P.del.push(t)});
+  return P;
+}
+function gReadApply(P){
+  const ids={};
+  P.newAcc.forEach((v,k)=>{const a={id:uid(),name:v.name,init:v.init};S.accounts.push(a);ids[k]=a.id;logC('aggiunta','conto (dal gestionale)',null,a)});
+  P.newCat.forEach((v,k)=>{const c={id:uid(),name:v.name,icon:'tag',color:v.color,type:v.type};S.cats.push(c);ids[k]=c.id;logC('aggiunta','categoria (dal gestionale)',null,c)});
+  const fix=x=>{['acc','acc2','c'].forEach(k=>{if(x[k]&&ids[x[k]])x[k]=ids[x[k]]});return x};
+  const ts=Date.now();
+  P.add.forEach((x,i)=>S.tx.push(Object.assign({id:uid(),ts:ts+i},fix(x))));
+  P.upd.forEach(([ex,x])=>{fix(x);delete ex.acc2;delete ex.c;Object.assign(ex,x)});
+  const del=new Set(P.del.map(t=>t.id));S.tx=S.tx.filter(t=>!del.has(t.id));
+  save();
+  ls.set(K.gread,JSON.stringify({skip:P.skip,ts:P.ts,when:Date.now()}));
+  logC('importazione','spese da gestionale.json',null,{nuove:P.add.length,aggiornate:P.upd.length,eliminate:P.del.length,gia_presenti:P.dup,conti_nuovi:[...P.newAcc.values()].map(a=>a.name),categorie_nuove:[...P.newCat.values()].map(c=>c.name)});
+}
+async function gReadFile(file){
+  let G;
+  try{G=JSON.parse((await file.text()).replace(/^﻿/,''))}catch(e){return toast('Il file non è un JSON valido')}
+  if(!G||!G.spese||!Array.isArray(G.spese.mov))return toast(G&&G.tipo==='spese-telefono'?'Questo è il file del telefono: scegli gestionale.json':'Nel file non ci sono le spese del gestionale');
+  const P=gReadPlan(G),r=jget(K.gread,{});
+  const tot=P.add.length+P.upd.length+P.del.length+P.newAcc.size+P.newCat.size;
+  if(!tot){ls.set(K.gread,JSON.stringify(Object.assign(r,{skip:P.skip,ts:P.ts,when:Date.now()})));render(true);return toast('Nessuna novità dal gestionale')}
+  const old=r.ts&&P.ts&&P.ts<r.ts?'<br><span class="red">Attenzione: questo file è più vecchio di quello letto l\'ultima volta.</span>':'';
+  const msg=`Dal gestionale (salvato il ${P.ts?gWhen(P.ts):'?'}):<br><b>${P.add.length}</b> nuove · <b>${P.upd.length}</b> modificate · <b>${P.del.length}</b> eliminate${P.dup?`<br>${P.dup} già presenti sul telefono, saltate`:''}`+
+    (P.newAcc.size?`<br>Conti nuovi: ${[...P.newAcc.values()].map(a=>esc(a.name)).join(', ')}`:'')+
+    (P.newCat.size?`<br>Categorie nuove: ${[...P.newCat.values()].map(c=>esc(c.name)).join(', ')}`:'')+old;
+  if(!await confirmBox(msg,'Aggiorna'))return;
+  gReadApply(P);render(true);toast('Spese del gestionale aggiornate');
+}
+
 function viewGest(){
+  const r=jget(K.gread,{}),n=S.tx.filter(t=>t.gid).length;
+  return `<div class="grp">Ricevi dal gestionale</div>
+    <div class="card" style="margin-top:0"><div class="mu" style="font-size:13px">Spese del gestionale sul telefono</div><div class="big">${n} movimenti</div><div class="mu" style="font-size:13px">${r.when?'Ultima lettura '+gWhen(r.when)+' · file salvato il '+gWhen(r.ts):'Non ancora lette'}</div></div>
+    <div style="padding:0 16px"><div class="acts"><button class="btn blue" data-act="gread">${ic('dl',20)}Leggi gestionale.json</button></div>
+    <div class="hint" style="margin-top:16px">Scegli il file da OneDrive › Documenti › Gestionale. Arrivano le spese inserite sul PC: nuove, modificate ed eliminate. Sul telefono restano in sola lettura (si modificano nel gestionale) e non vengono rimandate indietro. Del file viene letta solo la sezione Spese.</div>
+    ${n?'<div class="acts"><button class="btn ghost" data-act="greadoff">Togli dal telefono le spese del gestionale</button></div>':''}</div>
+    <input type="file" id="gfile" accept=".json,application/json" style="display:none">
+    <div class="grp">Invia al gestionale</div>${viewGestSend()}`;
+}
+function viewGestSend(){
   const c=gCfg();
   if(!gOn()){
     const d=new Date(),def=d.getFullYear()+'-'+pad(d.getMonth()+1)+'-01';
-    return `<div class="card"><div class="w6" style="margin-bottom:8px">Come funziona</div><div class="mu" style="font-size:13px">L'app prepara il file <b style="color:var(--tx);font-weight:600">spese-telefono.json</b> con i tuoi movimenti. Lo salvi su OneDrive nella cartella del gestionale (Documenti › Gestionale). Quando apri il gestionale sul PC, le spese entrano da sole: nuove, modificate ed eliminate.</div></div>
+    return `<div class="card" style="margin-top:0"><div class="w6" style="margin-bottom:8px">Come funziona</div><div class="mu" style="font-size:13px">L'app prepara il file <b style="color:var(--tx);font-weight:600">spese-telefono.json</b> con i tuoi movimenti. Lo salvi su OneDrive nella cartella del gestionale (Documenti › Gestionale). Quando apri il gestionale sul PC, le spese entrano da sole: nuove, modificate ed eliminate.</div></div>
       <div style="padding:0 16px"><div class="fld"><label for="gfrom">Invia i movimenti con data dal</label><input id="gfrom" type="date" value="${def}"></div>
       <div class="hint">Quelli che il gestionale ha già (stessa data, tipo, importo e conto) non vengono duplicati.</div>
       <div class="acts"><button class="btn" data-act="gon">Attiva</button></div></div>`;
   }
   const n=gMov().length,p=gPending();
-  return `<div class="card"><div class="mu" style="font-size:13px">${p?'Ci sono modifiche da inviare':'Tutto inviato'}</div><div class="big ${p?'':'green'}" style="${p?'color:var(--amber)':''}">${n} movimenti</div><div class="mu" style="font-size:13px">dal ${c.from.split('-').reverse().join('/')}${c.last?' · ultimo invio '+gWhen(c.last):''}</div></div>
+  return `<div class="card" style="margin-top:0"><div class="mu" style="font-size:13px">${p?'Ci sono modifiche da inviare':'Tutto inviato'}</div><div class="big ${p?'':'green'}" style="${p?'color:var(--amber)':''}">${n} movimenti</div><div class="mu" style="font-size:13px">dal ${c.from.split('-').reverse().join('/')}${c.last?' · ultimo invio '+gWhen(c.last):''}</div></div>
     <div style="padding:0 16px"><div class="acts"><button class="btn" data-act="gsend">${ic('ul',20)}Invia al gestionale</button></div>
     <div class="grp" style="padding:24px 0 8px">Ogni volta</div>
     <div class="kv"><span>1. Tocca «Invia al gestionale»</span></div>
@@ -1454,6 +1535,12 @@ const A={
   gon(){const v=$('#gfrom').value;if(!v)return toast('Serve una data');gSet({from:v});logC('modifica','invio al gestionale',null,{attivo:true,dal:v});render(true)},
   gfrom(){const v=$('#gfrom').value,b=gCfg().from;if(!v||v===b)return;gSet({from:v});logC('modifica','invio al gestionale: data di inizio',b,v);render(true);toast('Data cambiata')},
   gsend(){gSend()},
+  gread(){const f=$('#gfile');f.value='';f.click()},
+  async greadoff(){
+    const n=S.tx.filter(t=>t.gid).length;
+    if(!await confirmBox(`Togliere dal telefono le ${n} spese arrivate dal gestionale? Nel gestionale restano.`,'Togli'))return;
+    S.tx=S.tx.filter(t=>!t.gid);save();ls.del(K.gread);logC('eliminazione','spese lette dal gestionale',{movimenti:n},null);render(true);toast('Fatto');
+  },
   async goff(){if(!await confirmBox('Disattivare l\'invio al gestionale? Le spese già arrivate nel gestionale restano.','Disattiva'))return;const b=gCfg();ls.del(K.gest);logC('modifica','invio al gestionale',{dal:b.from},null);render(true)},
   impfile(){const f=$('#ifile');f.value='';f.click()},
   cats(){catsSheet()},addcat(){catSheet()},editcat(el){catSheet(el.dataset.id)},
@@ -1467,7 +1554,7 @@ const A={
   async devwipe(){
     if(!await confirmBox('Cancellare tutti i dati locali e la cache? I movimenti andranno persi.','Cancella'))return;
     const b={movimenti:S.tx.length,conti:S.accounts.length,rate:S.rates.length};
-    ls.del(K.gest);/* un file vuoto toglierebbe dal gestionale le spese già arrivate */
+    ls.del(K.gest);ls.del(K.gread);/* un file vuoto toglierebbe dal gestionale le spese già arrivate */
     S=seed();save();logC('reset','dati locali',b,{movimenti:0,conti:S.accounts.length,rate:0});
     try{const ks=await caches.keys();await Promise.all(ks.map(k=>caches.delete(k)))}catch(e){}
     try{const rs=await navigator.serviceWorker.getRegistrations();await Promise.all(rs.map(r=>r.unregister()))}catch(e){}
@@ -1484,6 +1571,7 @@ document.addEventListener('input',e=>{if(e.target.id==='q'){U.q=e.target.value;r
 document.addEventListener('change',e=>{
   if(e.target.id==='file'&&e.target.files[0])importJson(e.target.files[0]);
   if(e.target.id==='ifile'&&e.target.files[0])importFile(e.target.files[0]);
+  if(e.target.id==='gfile'&&e.target.files[0])gReadFile(e.target.files[0]);
 });
 /* se l'app resta aperta, al ritorno registra le ricorrenti arrivate a scadenza */
 document.addEventListener('visibilitychange',()=>{if(document.hidden)return;const n=runRec();if(n){render(true);toast(n===1?'1 movimento ricorrente registrato':n+' movimenti ricorrenti registrati')}});
